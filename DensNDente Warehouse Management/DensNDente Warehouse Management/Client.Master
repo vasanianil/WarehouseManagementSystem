@@ -1,0 +1,132 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Client.master.cs" Inherits="DensNDente_Warehouse_Management.Client" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="Style/MainStyle.css" rel="stylesheet" />
+    <link href="Style/Menu.css" rel="stylesheet" />
+    <link href="Style/jquery.jnotify.css" rel="stylesheet" />
+    <script src="../Scripts/jquery-1.4.2.min.js"></script>
+    <script src="../Scripts/jquery.jnotify.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="width: 100%; float: left;">
+
+            <%--Header Start--%>
+            <div style="width: inherit; float: left">
+                <div style="width: 1024px; margin: auto">
+                    <div style="float: left; margin-top: 10px;">
+                        <a href="../default.aspx">
+                            <img src="../Images/logo.png" /></a>
+                    </div>
+                    <div style="float: right; margin-top: 15px; text-align: center;">
+                    </div>
+                </div>
+            </div>
+            <%--Header End--%>
+
+
+            <%--Menu Start--%>
+            <div style="width: inherit; float: left">
+                <div style="width: 1024px; margin: auto">
+
+                    <div id='cssmenu' style="margin-bottom: 10px">
+                        <ul>
+                            <li class='active'><a href="../main.aspx">Home</a></li>
+                            <li class='has-sub '><a href='#'>Products</a>
+                                <ul>
+                                    <li class='has-sub '><a href='#'>Product 1</a>
+                                        <ul>
+                                            <li><a href='#'>Sub Item</a></li>
+                                            <li><a href='#'>Sub Item</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class='has-sub '><a href='#'>Product 2</a>
+                                        <ul>
+                                            <li><a href='#'>Sub Item</a></li>
+                                            <li><a href='#'>Sub Item</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href='#'>Pages</a>
+                                <ul>
+                                    <li><a href="../Pages/bin.aspx">Bin</a></li>
+                                    <li><a href="../Pages/customer.aspx">Customer</a></li>
+                                    <li><a href="../Pages/employee.aspx">Employee</a></li>
+                                    <li><a href="../Pages/newsletter.aspx">News Letter</a></li>
+                                    <li><a href="../Pages/paystructure.aspx">Pay Structure</a></li>
+                                    <li><a href="../Pages/permission.aspx">Permission</a></li>
+
+
+                                </ul>
+
+                            </li>
+                            <li><a href='#'>Pages 2</a>
+                                <ul>
+                                    <li><a href="../Pages/purchaseorder.aspx">Purchase Order</a></li>
+                                    <li><a href="../Pages/role.aspx">Role</a></li>
+                                    <li><a href="../Pages/salary.aspx">Salary</a></li>
+                                    <li><a href="../Pages/saleinvoice.aspx">Sale Invoice</a></li>
+                                    <li><a href="../Pages/salestarget.aspx">Sales Target</a></li>
+                                    <li><a href="../Pages/vendor.aspx">Vendor</a></li>
+
+                                </ul>
+
+                            </li>
+                            <li><a href='#'>Contact</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <%--Menu End--%>
+
+            <%--Content Start--%>
+            <div style="width: inherit; float: left;">
+                <div style="width: 1024px; margin: auto;">
+                    <div style="width: 1004px; float: left; border: 1px solid #1b9bff; padding: 10px; padding-bottom: 20px;">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+            </div>
+            <%--Content End--%>
+
+            <%--Footer--%>
+            <div style="width: inherit; float: left">
+                <div style="width: 1024px; margin: auto; font-weight: bold;">
+                    <div style="background-color: #1b9bff; float: left; width: 1004px; padding: 10px; margin-top: 10px;">
+                        <div style="float: left; width: 100%; font-size: 18px;">
+                            <div style="float: right; margin-left: 20px">
+                                <a href="" style="color: white; text-decoration: underline;">Sitemap</a>
+                            </div>
+
+                            <div style="float: right">
+                                <a href="contactus.aspx" style="color: white; text-decoration: underline;">Contact us</a>
+                            </div>
+                        </div>
+
+                        <div style="font-size: 14px; padding-top: 25px; float: left; width: 100%; color: white;">
+                            <div style="float: left;">
+                                Dens N' Dente © 2013. All rights reserved. The copyright is owned by Dens N' Dente
+                            </div>
+                            <div style="float: right;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <%--Footer End--%>
+        </div>
+
+    </form>
+</body>
+</html>

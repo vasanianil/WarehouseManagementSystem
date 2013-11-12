@@ -1,0 +1,265 @@
+﻿body {
+    font-family: Calibri;
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*=8=8=8=      BUTTON      8=8=8=8*/
+
+input[type=text], input[type=email], textarea, select, input[type=password] {
+    padding: 5px 10px;
+    outline: 0;
+    min-width:250px;
+    background: rgba(0, 0, 0, 0.07);
+    border-radius: 8px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12);
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12);
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+}
+
+    input[type=text]:invalid, input[type=email]:invalid, input[type=password]:invalid {
+        border-left: 5px solid #ed4e6e;
+    }
+
+    input[type=text]:valid, input[type=email]:valid, input[type=password]:valid {
+        border-left: 5px solid #1b9bff;
+    }
+
+    input[type="text"]:hover, input[type="email"]:hover, select:hover, input[type=password]:hover {
+        background: #fff;
+        border-left: 5px solid #ed4e6e;
+        transition: all 0.2s ease;
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+        -moz-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+        -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+    }
+
+
+
+
+.button {
+    border: none;
+    padding: 0.6em 1.2em;
+    background: #ed4e6e;
+    color: #fff;
+    font-size: 1em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    margin: 3px 2px;
+    border-radius: 2px;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.4);
+}
+
+    .button:hover {
+        background: #2c3e52;
+        transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+    }
+
+.button-cancel {
+    border: none;
+    padding: 0.6em 1.2em;
+    background: #0AA81D;
+    color: #fff;
+    font-size: 1em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    margin: 3px 2px;
+    border-radius: 2px;
+    text-shadow: 0 -1px rgba(0, 0, 0, 0.4);
+}
+
+    .button-cancel:hover {
+        background: #2c3e52;
+        transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+    }
+
+
+/*=8=8=8==8==88*/
+
+
+/*===================================================Navigation Start*/
+
+
+
+/* Navigation */
+.metro-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+    .metro-nav li {
+        display: inline-block;
+        *display: inline;
+        zoom: 1;
+    }
+
+        .metro-nav li a {
+            display: block;
+            transition: all 0.1s;
+        }
+
+/* User Style */
+.metro-nav {
+    background: #0898d7;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+    .metro-nav li {
+        margin: 0px;
+    }
+
+        .metro-nav li a {
+            color: white;
+            text-decoration: none;
+            padding: 20px 25px;
+            margin: 0;
+            font-weight: bold;
+        }
+
+            .metro-nav li a:hover,
+            .metro-nav li a.active {
+                color: whitesmoke;
+                background: #087cae;
+            }
+
+/*===============================================Navigarion End*/
+
+
+/*================   Table Design ================*/
+
+
+.ctable {
+    border-collapse: collapse;
+    border: 1px solid #1b9bff;
+    border-bottom: 2px solid #1b9bff;
+}
+
+    .ctable tr:hover td {
+        color: #333;
+    }
+
+    .ctable th,
+    .ctable td {
+        color: #999;
+        border: 1px solid #eee;
+        padding: 3px 7px;
+        border-collapse: collapse;
+    }
+
+        .ctable th a {
+            font-weight: bold;
+            color: white;
+            transition: all 0.2s ease;
+            -webkit-transition: all 0.2s ease;
+            -moz-transition: all 0.2s ease;
+            -o-transition: all 0.2s ease;
+        }
+
+            .ctable th a:hover {
+                color: black;
+                text-decoration: none;
+                transition: all 0.2s ease;
+                -webkit-transition: all 0.2s ease;
+                -moz-transition: all 0.2s ease;
+                -o-transition: all 0.2s ease;
+            }
+
+    .ctable tr td a {
+        font-weight: bold;
+        color: black;
+        transition: all 0.2s ease;
+        margin-right: 10px;
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+    }
+
+        .ctable tr td a:hover {
+            transition: all 0.2s ease;
+            -webkit-transition: all 0.2s ease;
+            -moz-transition: all 0.2s ease;
+            -o-transition: all 0.2s ease;
+            color: #ed4e6e;
+        }
+
+    .ctable th {
+        background: #1b9bff;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 16px;
+    }
+
+        .ctable th.last {
+            border-right: none;
+        }
+
+    .ctable tbody tr:nth-child(odd) {
+        background-color: #f2f2f2;
+    }
+
+.PagerStyle td table tbody tr td {
+    border: 1px solid #1b9bff;
+    padding: 3px 10px;
+    font-weight: bold;
+}
+
+    .PagerStyle td table tbody tr td a {
+        margin-right: 0px;
+    }
+
+    .PagerStyle td table tbody tr td:hover {
+        background-color: #ed4e6e;
+        color: white;
+        border-color: #ed4e6e;
+        transition: all 0.2s ease;
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+    }
+
+        .PagerStyle td table tbody tr td:hover a {
+            color: white;
+            text-decoration: none;
+        }
+
+    .PagerStyle td table tbody tr td a:hover {
+        color: white;
+        transition: all 0.2s ease;
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+    }
+
+
+.gridHeaderStyle {
+    margin-bottom: 5px;
+    border-top: 1px solid #1b9bff;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    font-size: 26px;
+    color: #ed4e6e;
+    margin-top: 20px;
+}
